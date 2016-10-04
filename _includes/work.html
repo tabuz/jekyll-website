@@ -1,17 +1,33 @@
-<section class="alt-section">
+<section class="alt-section section-work">
   <h3 id="work">Work</h3>
-
-  <div class="thumb-container">
-
-    {% for item in site.data.portfolio.projects %}
-
-      <a href="" class="thumb-unit" style="background-image: url(/img/work/{{ item.folder }}/thumb.jpg)">
+  <div class="work-belt">
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+      {% for item in site.data.portfolio.projects %}
+      <a class="thumb-unit" style="background-image: url(/img/work/{{ item.folder }}/thumb.jpg)">
         <div class="thumb-mask">
           <strong>{{ item.name }}</strong>
         </div>
       </a>
+      {% endfor %}
 
-    {% endfor %}
-
+    </div>
+    </div>
+    <div class="work-wrap">
+      <div class="work-container">
+        <div class="work-return">{% include icons/icon-back.html %}</div>
+        <h4>Do work !</h4>
+        <div style="width: 600px; height: 600px; background: #d34">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div style="width: 600px; height: 600px; background: #d34">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+      </div>
+    </div>
   </div>
 </section>
