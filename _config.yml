@@ -1,6 +1,6 @@
 # Build settings
  markdown: kramdown
  permalink: pretty
-
+ baseurl: /jekyll-website
  sass:
   sass_dir: css
