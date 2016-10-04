@@ -1,8 +1,22 @@
 $(function(){
   smoothScroll(1000);
   workBelt();
+  loadWork();
 });
 
+function loadWork(){
+  $('.thumb-unit').click(function(){
+
+    var $this = $(this),
+        newFolder = $this.data('folder'),
+        newHtml = '/work/'+newFolder+'.html',
+        newTitle = $this.find('strong').text();
+    console.log(newFolder);
+    $('.work-load').load(newHtml);
+    $('.work-title').text(newTitle);
+  });
+
+}
 function workBelt(){
 
   $('.thumb-unit').click(function(){
