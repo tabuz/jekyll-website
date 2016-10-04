@@ -1,0 +1,27 @@
+footer
+  @extend %bg-img
+  background-image: url(/img/#{$logo-path}), url(/img/#{$hero-path}) 
+  +clearfix
+
+  .lockup
+    padding: 50px 30px
+    +clearfix
+
+    .content-wrap
+      float: left
+      margin-left: 80px
+
+      .copyright
+        margin: 0
+        text-transform: uppercase
+        font:
+          size: 12px
+      a
+        color: rgba(0,0,0,0.5)
+        @extend %small-bold
+        display: inline-block
+        margin-right: 30px
+        text-decoration: none
+
+        &:hover
+          color: rgba(0,0,0,0.7)

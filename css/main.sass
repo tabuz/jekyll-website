@@ -1,0 +1,19 @@
+---
+# This is the Front Matter block
+---
+//Images Paths
+$logo-path: "{{ site.data.portfolio.logo }}"
+$hero-path: "{{ site.data.portfolio.bg-img }}"
+$avatar-path: "{{ site.data.portfolio.avatar }}"
+
+// Tools
+@import "tools/bourbon/bourbon"
+@import "vars"
+@import "placeholders"
+@import "base"
+
+//Pages
+@import "header"
+@import "footer"
+@import "about"
+@import "work"
