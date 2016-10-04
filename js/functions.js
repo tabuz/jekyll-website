@@ -9,7 +9,7 @@ function loadWork(){
 
     var $this = $(this),
         newFolder = $this.data('folder'),
-        newHtml = '/work/'+newFolder+'.html',
+        newHtml = '../work/'+newFolder+'.html',
         newTitle = $this.find('strong').text();
     console.log(newFolder);
     $('.work-load').load(newHtml);
