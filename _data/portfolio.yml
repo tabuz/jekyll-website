@@ -40,3 +40,10 @@ projects:
 - {name: Project 6, folder: 'proj-6'}
 - {name: Project 7, folder: 'proj-7'}
 - {name: Project 8, folder: 'proj-8'}
+
+#Clients
+clients:
+- {avatar: 'face-aaroni.jpg', name: 'Scott Summers', title: 'CEO ontoText', content: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>', logo: 'logo1.png'}
+- {avatar: 'face-atariboy.jpg', name: 'Jhon Smith', title: 'Antarctica Design President', content: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>', logo: 'logo2.png'}
+- {avatar: 'face-jackiesaik.jpg', name: 'Teresa Nowak', title: 'CEO Quebec Int.', content: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>', logo: 'logo3.png'}
+- {avatar: 'face-teleject.jpg', name: 'George Owl', title: 'Head Manager in LoremSorem', content: '<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</p>', logo: 'logo4.png'}
