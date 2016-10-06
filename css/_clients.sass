@@ -18,20 +18,25 @@
     margin: -20px
     +position(realtive, 50% null null 40px)
 
+.clients-control-mob
+  display: none
+
 
 .clients-belt
   width: 100%
   position: relative
+  +perspective(500px)
 
   .client-unit
-    max-width: 750px
-    margin: 0 auto 50px
-    +display(flex)
+    +position(relative)
+    +transition(all .8s)
     display: none
-
+    max-width: 750px
+    margin: 0 auto
 
     &.active-client
-      display: flex
+      +display(flex)
+      @extend %bounceOut
 
     .client-img
       min-width: 300px
@@ -60,6 +65,7 @@
       line-height: 36px
       position: relative
 
+
       .client-quote-mark
         z-index: -1
         +position(absolute, -5px null null -15px)
@@ -72,20 +78,71 @@
 .clients-logos
   position: relative
   max-width: 750px
-  margin: 0 auto 100px
+  margin: 50px auto 100px
   +display(flex)
-  +align-items(space-around)
-  +justify-content(center)
+  +align-items(flex-end)
+  +flex-wrap(wrap)
+  +justify-content(space-around)
 
   .client-logo
-    height: 80px
-    min-width: 200px
-    margin-left: 20px
-    background:
-      size: contain
-      position: center bottom
-      repeat: no-repeat
+    margin: 0 0 10px 20px
+    padding-bottom: 8px
     cursor: pointer
+    opacity: 0.5
+    border-bottom: 4px solid transparent
 
     &.active-client
-      box-shadow: 0px 10px 0px 0px #fff, 0px 14px 0px 0px $accent
+      border-bottom: 4px solid $accent
+      opacity: 1
+
+
+@media (max-width: 750px)
+  .clients-control
+    display: none
+
+  .clients-control-mob
+    display: block
+    text-align: center
+    margin-bottom: 30px
+
+    span
+      display: inline-block
+      +size(18px)
+      background: $bgcolor
+      border-radius: 50%
+      margin: 0px 5px 0px
+      cursor: pointer
+
+      &.active-client
+        box-shadow: 0px 0px 0px 3px $accent
+        +size(18px)
+
+  .clients-belt
+    perspective: none
+
+    .client-unit
+      transform-origin: center
+      transform: scale(0)
+
+    .client-unit.active-client
+      display: block
+      position: relative
+      margin-left: 0px
+      left: auto
+      transform: scale(1)
+
+      .client-img
+        margin-bottom: 20px
+
+      .client-content
+        padding: 0px 30px
+        max-width: 400px
+        margin: 0 auto 50px auto
+
+        .client-quote-mark
+          z-index: -1
+          left: 15px
+          top: -15px
+
+  .clients-logos
+    display: none

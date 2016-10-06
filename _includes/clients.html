@@ -5,6 +5,11 @@
     <div class="client-control-next">{% include /icons/icon-next.html %}</div>
     <div class="client-control-prev">{% include /icons/icon-prev.html %}</div>
   </div>
+  <div class="clients-control-mob">
+    {% for client in site.data.portfolio.clients %}
+    <span></span>
+    {% endfor %}
+  </div>
   <div class="clients-belt">
     {% for client in site.data.portfolio.clients %}
     <div class="client-unit">
@@ -22,7 +27,7 @@
   </div>
   <div class="clients-logos">
     {% for client in site.data.portfolio.clients %}
-    <div class="client-logo" style="background-image: url(../img/clients/{{ client.logo }})"></div>
+    <img class="client-logo" src="../img/clients/{{ client.logo }}" />
     {% endfor %}
   </div>
 

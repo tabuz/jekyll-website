@@ -8,8 +8,9 @@ $(function(){
 function clientStuff(){
   $('.client-unit').first().addClass('active-client');
   $('.client-logo').first().addClass('active-client');
+  $('.clients-control-mob span').first().addClass('active-client');
 
-    $('.client-logo').click(function(){
+    $('.client-logo, .clients-control-mob span').click(function(){
       var $this = $(this),
           $siblings = $this.parent().children(),
           position = $siblings.index($this);
