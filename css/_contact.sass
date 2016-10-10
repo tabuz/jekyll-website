@@ -1,0 +1,37 @@
+.section-contact
+  text-align: center
+
+  .socials-icons
+    margin: 0 auto 75px
+    max-width: 700px
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-between)
+
+    a
+      +size(50px)
+      background-color: $accent
+      border-radius: 50%
+      line-height: 50px
+      font:
+        size: 30px
+        weight: 300
+      color: #fff
+      +transition
+
+      &:hover
+        +transform(scale(1.2))
+
+.bar
+  margin: 0 auto 50px
+  width: 200px
+  height: 0px
+  border-top: 5px solid $accent
+
+.biglink
+  display: inline-block
+  font:
+    size: 72px
+    weight: 300
+    color: $accent
+  margin-bottom: 50px
