@@ -14,7 +14,7 @@
     {% for client in site.data.portfolio.clients %}
     <div class="client-unit">
       <div class="client-img">
-        <img src="../img/clients/{{ client.avatar }}" alt="client-img"></img>
+        <img src="img/clients/{{ client.avatar }}" alt="client-img"></img>
         <strong class="client-name">{{ client.name }}</strong>
         <em class="client-title">{{ client.title }}</em>
       </div>
@@ -27,7 +27,7 @@
   </div>
   <div class="clients-logos">
     {% for client in site.data.portfolio.clients %}
-    <img class="client-logo" src="../img/clients/{{ client.logo }}" />
+    <img class="client-logo" src="img/clients/{{ client.logo }}" />
     {% endfor %}
   </div>
 
